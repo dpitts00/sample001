@@ -1,7 +1,66 @@
+.content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+  grid-template-rows: minmax(100px, auto);
+}
+
+.header {
+  grid-column: 1/13;
+  grid-row: 1;
+
+  font-family: "Graduate", serif;
+
+}
+
+.menu {
+  grid-column: 4/10;
+  grid-row: 2;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu h4{
+  position: relative;
+  float: left;
+  padding-right: 20px;
+}
+
+.topStoriesL {
+  grid-column: 1/5;
+  grid-row: 3;
+}
+
+.topStoriesC {
+  grid-column: 5/9;
+  grid-row: 3;
+}
+
+.topStoriesR {
+  grid-column: 9/13;
+  grid-row: 3;
+}
+
+.article {
+  grid-column: 1/13;
+  grid-row: auto;
+}
+
 h2 {
   color: #123456;
   background-color: #654321
-  font-family: sans-serif;
+  font-family: inherit;
   font-weight: normal;
   font-size: 36px;
+  text-align: center;
 }
+
+h3 {
+  color: #123456;
+  background-color: #654321
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+}
+/* they probably want these to float:left though for mobile... */
